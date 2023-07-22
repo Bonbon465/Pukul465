@@ -1,0 +1,35 @@
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Help Panel navigation
+Marketplace
+Documentation
+Getting started with a workflow
+To help you get started, this guide shows you some basic examples. For the full GitHub Actions documentation on workflows, see "Configuring workflows."
+
+Customizing when workflow runs are triggered
+Set your workflow to run on push events to the main and release/* branches
+
+on:
+  push:
+    branches:
+    - main
+    - release/*
+Set your workflow to run on pull_request events that target the main branch
+
+on:
+  pull_request:
+    branches:
+    - main
+Set your workflow to run every day of the week from Monday to Friday at 2:00 UTC
+
+on:
+  schedule:
+  - cron: "0 2 * * 1-5"
